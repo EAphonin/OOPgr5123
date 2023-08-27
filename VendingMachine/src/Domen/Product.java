@@ -7,12 +7,9 @@ public class Product {
     public Product(String name, int price) {
         this.name = name;
 
-        if (price > 0) 
-        {
+        if (price > 0) {
             this.price = price;
-        }
-        else 
-        {
+        } else {
             this.price = 10;
         }
 
@@ -33,8 +30,9 @@ public class Product {
     public void setPrice(int price) {
         this.price = price;
     }
-@Override
-public String toString(){
-    return "Product: price = " +this.price+"; name = "+this.name;
-}
+
+    @Override
+    public String toString() {
+        return "Product: name = " + this.name + "; price = " + this.price;
+    }
 }
